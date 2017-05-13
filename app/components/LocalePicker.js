@@ -5,7 +5,8 @@ class LocalePicker extends React.Component {
   static propTypes = {
     handleChange: PropTypes.func.isRequired,
     locale: PropTypes.string.isRequired,
-    supportedLocales: PropTypes.array.isRequired
+    supportedLocales: PropTypes.array.isRequired,
+    message: PropTypes.string.isRequired
   }
 
   render() {

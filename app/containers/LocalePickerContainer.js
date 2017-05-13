@@ -1,3 +1,4 @@
+import Globalize from 'globalize';
 import { connect } from 'react-redux';
 import LocalePicker from '../components/LocalePicker';
 import { setLocale } from '../reducers'
@@ -8,7 +9,8 @@ const mapStateToProps = (state) => {
     supportedLocales: [
       { code: 'en-US', name: 'English (US)' },
       { code: 'de-DE', name: 'Deutsch' }
-    ]
+    ],
+    message: Globalize.formatMessage('message')
   };
 }
 
